@@ -1,9 +1,37 @@
-body {	
-	display: flex;
-	align-content: center;
-	justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15pt;
+	background: url("images/pexels-pixabay-medium-53594.jpg");
+	color: white;
 }
 
-.head {
+h1, h2, h3 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+header {
 	text-align: center;
+	text-shadow: 1px 1px 5px #000;
+}
+
+.card {
+	border-radius: 1em;
+	background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	padding: 0.25rem 1.5rem;
+}
+
+.container {
+	margin: 0 calc(10vw - 3rem);
+}
+
+@media (max-width: 40em) {
+	.container {
+		margin: 0 1rem;
+	}
 }
