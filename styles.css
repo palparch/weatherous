@@ -1,37 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 15pt;
-	background: url("images/pexels-pixabay-medium-53594.jpg");
-	color: white;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15pt;
+  background: url("images/cloudy-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 h1, h2, h3 {
-	font-size: 2em;
-	font-weight: 500;
+  font-size: 2em;
+  font-weight: 500;
 }
 
 header {
-	text-align: center;
-	text-shadow: 1px 1px 5px #000;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
 }
 
-.card {
-	border-radius: 1em;
-	background: rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	-moz-backdrop-filter: blur(10px);
-	padding: 0.25rem 1.5rem;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+  gap: 0.5rem;
+}
+.cards .card {
+  border-radius: 0.5rem;
+  background: hsla(0deg, 0%, 90%, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  padding: 0.25rem 1.5rem;
+}
+
+.small-font {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-	margin: 0 calc(10vw - 3rem);
+  margin: 3rem calc(10vw - 3rem);
+}
+@media (max-width: 40em) {
+  .container {
+    margin: 3rem 1rem;
+  }
 }
 
-@media (max-width: 40em) {
-	.container {
-		margin: 0 1rem;
-	}
-}
+/*# sourceMappingURL=styles.css.map */

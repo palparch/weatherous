@@ -5,20 +5,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Weatherous</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Fill" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<h2>Jaipur</h2>
-		<h3>22℃</h3>
-		<p>Haze</p>
-		<p>H:25℃ L:9℃</p>
+		<h4 class="small-font">Jaipur</h4>
+		<h1>Haze, 22°C</h1>
+		<p>
+			<span class="material-icons-outlined">
+			light_mode
+			</span>
+			25°C,
+			
+			<span class="material-icons-outlined">
+			dark_mode
+			</span>
+			9°C
+		</p>
 	</header>
-	<div class="container">
-		<div class="card predict-week">
-			<p>10 Day Forecast</p>
-			<div>
-				<p>Today</p>
-			</div>
+	<div class="container cards">
+		<div class="card">
+			<p>Feels like 25°C</p>
+		</div>
+		<div class="card">
+			<p>Humidity: 30%</p>
+		</div>
+		<div class="card">
+			<p>Pressure: 101.7kPa</p>
+		</div>
+	</div>
+	<div class="container cards">
+		<div class="card">
+			<span class="material-icons-fill">
+				dark_mode
+			</span>
+			<p>Clear sky</p>
+			<p>8pm</p>
 		</div>
 	</div>
 </body>
